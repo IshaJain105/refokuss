@@ -1,8 +1,10 @@
 import React from "react";
+import Button from "./Button";
 
 const Navbar = () => {
   return (
-    <div className="max-w-screen-xl mx-auto py-6 flex gap-20 text-white">
+    <div className="max-w-screen-xl mx-auto py-6 flex items-center justify-between gap-20 text-white border-b-[0.1em] border-zinc-600">
+      <div className="flex">
       <img
         src="https://cdn.prod.website-files.com/62df9251ae9124d9d726bcb9/62dfc1419247bccdd5a2dd1b_Tools.svg"
         alt=""
@@ -24,6 +26,9 @@ const Navbar = () => {
           )
         )}
       </div>
+      
+      </div>
+      <Button/>
     </div>
   );
 };
