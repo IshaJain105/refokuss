@@ -8,7 +8,7 @@ const Cards = () => {
 
     ]
   return (
-    <div className="w-full pb-36 ">
+    <div className="w-full pb-20 ">
       <div className="max-w-screen-xl mx-auto min-h-[25rem] flex gap-2">
         {cardDetail.map((card,index)=>(
             <Card key={index} card={card} />
