@@ -9,20 +9,20 @@ const Footer = () => {
             refokus.
           </h1>
           <div className="mt-10 flex gap-5">{["Privacy Policy", "Cookie Policy", "Impressum","Terms"].map((item, index) => (
-              <a className="text-sm block mt-2 text-zinc-500">{item}</a>
+              <a key={index} className="text-sm block mt-2 text-zinc-500">{item}</a>
             ))}</div>
         </div>
         <div className="basis-1/2 flex gap-4">
           <div className="basis-1/3">
             <h1 className=" text-zinc-500 mb-10">Socials</h1>
             {["Instagram", "Twitter (X?)", "LinkedIn"].map((item, index) => (
-              <a className="block mt-2 text-sm text-zinc-600">{item}</a>
+              <a key={index} className="block mt-2 text-sm text-zinc-600">{item}</a>
             ))}
           </div>
           <div className="basis-1/3">
             <h1 className=" text-zinc-500 mb-10">Sitemap</h1>
             {["Home", "Work", "Careers","Contact"].map((item, index) => (
-              <a className="block mt-2 text-sm text-zinc-300">{item}</a>
+              <a key={index} className="block mt-2 text-sm text-zinc-300">{item}</a>
             ))}
           </div>
           <div className="basis-3/4 flex flex-col items-end justify-center">
