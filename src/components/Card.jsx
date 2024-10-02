@@ -1,10 +1,12 @@
+import { motion } from "framer-motion";
 import React from "react";
 import { BsArrowRight } from "react-icons/bs";
 
 const Card = ({ card }) => {
   return (
-    <div
-      className={`bg-zinc-800 flex flex-col justify-between rounded-xl p-6 ${card.width} hover:${card.hover}`}
+    <motion.div
+      className={`bg-zinc-800 flex flex-col justify-between rounded-xl p-6 ${card.width} `}
+      whileHover={{ backgroundColor: card.hover === "true" ? "#7443ff" :"#27302B", padding: "30px"}}
     >
       <div className="w-full">
         <div className="flex items-center justify-between">
@@ -28,7 +30,7 @@ const Card = ({ card }) => {
           <p className="text-sm">Lorem ipsum dolor sit amet consectetur.</p>
         )}
       </div>
-    </div>
+    </motion.div>
   );
 };
 
